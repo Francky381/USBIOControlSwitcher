@@ -130,7 +130,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	CDC_Transmit_HS((uint8_t *) data, strlen(data));
+	HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
